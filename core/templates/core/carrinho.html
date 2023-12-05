@@ -1,0 +1,172 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Carrinho de Compras</title>
+    <link rel="stylesheet" href="{% static 'css/carrinho.css'%}" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="logo_item">
+        <img src="{% static 'img/fapa-logo.jpg' %}" alt=""></i>Mercado FAPA
+        <a style="color: #4d4d4d;" href="/"><i class='bx bx-home'></i></a>
+      </div>
+
+      <div class="search_bar">
+        <input type="text" placeholder="Buscar" />
+      </div>
+
+      <div class="navbar_content">
+        <i class="bi bi-grid"></i>
+        <a href="/notificacoes"><i class='bx bx-bell'></i></a>
+        <a href="/carrinho"><i class='bx bx-cart'></i></a>
+        <a href="/orders"><i class='bx bx-basket'></i></a>
+        <a href="/"><img src="{% static 'img/user-logo3.png' %}" alt="" class="profile" /></i></a>
+      </div>
+    </nav>
+
+    <header>
+      <span>Carrinho de compras</span>
+    </header>
+    <main>
+      <div class="page-title">Seu Carrinho</div>
+      <div class="content">
+        <section>
+          <table>
+            <thead>
+              <tr>
+                <th>Produto</th>
+                <th>Preço</th>
+                <th>Quantidade</th>
+                <th>Total</th>
+                <th>-</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <div class="product">
+                    <img src="{% static 'img/item1.png' %}" alt="" />
+                    <div class="info">
+                      <div class="name">Tinta Suvinil</div>
+                      <div class="category">Tintas</div>
+                    </div>
+                  </div>
+                </td>
+                <td>R$ 109,90</td>
+                <td>
+                  <div class="qty">
+                    <button><i class="bx bx-minus"></i></button>
+                    <span>2</span>
+                    <button><i class="bx bx-plus"></i></button>
+                  </div>
+                </td>
+                <td>R$ 219,80</td>
+                <td>
+                  <button class="remove"><i class="bx bx-x"></i></button>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="product">
+                    <img src="{% static 'img/item4.png' %}" alt="" />
+                    <div class="info">
+                      <div class="name">Leite Piracanjuba</div>
+                      <div class="category">Bebidas</div>
+                    </div>
+                  </div>
+                </td>
+                <td>R$ 3,70</td>
+                <td>
+                  <div class="qty">
+                    <button><i class="bx bx-minus"></i></button>
+                    <span>3</span>
+                    <button><i class="bx bx-plus"></i></button>
+                  </div>
+                </td>
+                <td>R$ 11,10</td>
+                <td>
+                  <button class="remove"><i class="bx bx-x"></i></button>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="product">
+                    <img src="{% static 'img/item2.png' %}" alt="" />
+                    <div class="info">
+                      <div class="name">Kit Siage</div>
+                      <div class="category">Higiene Pessoal</div>
+                    </div>
+                  </div>
+                </td>
+                <td>R$ 155,80</td>
+                <td>
+                  <div class="qty">
+                    <button><i class="bx bx-minus"></i></button>
+                    <span>1</span>
+                    <button><i class="bx bx-plus"></i></button>
+                  </div>
+                </td>
+                <td>R$ 155,80</td>
+                <td>
+                  <button class="remove"><i class="bx bx-x"></i></button>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="product">
+                    <img src="{% static 'img/item7.png' %}" alt="" />
+                    <div class="info">
+                      <div class="name">Abacaxi</div>
+                      <div class="category">Frutas</div>
+                    </div>
+                  </div>
+                </td>
+                <td>R$ 8,99</td>
+                <td>
+                  <div class="qty">
+                    <button><i class="bx bx-minus"></i></button>
+                    <span>2</span>
+                    <button><i class="bx bx-plus"></i></button>
+                  </div>
+                </td>
+                <td>R$ 17,98</td>
+                <td>
+                  <button class="remove"><i class="bx bx-x"></i></button>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+        <aside>
+          <div class="box">
+            <header>Resumo da compra</header>
+            <div class="info">
+              <div><span>Sub-total</span><span>R$ 404,68</span></div>
+              <div><span>Frete</span><span>R$ 9,90</span></div>
+              <div>
+                <button>
+                  Adicionar cupom de desconto
+                  <i class="bx bx-right-arrow-alt"></i>
+                </button>
+              </div>
+            </div>
+            <footer>
+              <span>Total</span>
+              <span>R$ 414,58</span>
+            </footer>
+          </div>
+          <button>Finalizar Compra</button>
+        </aside>
+      </div>
+    </main>
+  </body>
+</html>

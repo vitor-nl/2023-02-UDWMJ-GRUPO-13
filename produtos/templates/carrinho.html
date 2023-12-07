@@ -1,7 +1,7 @@
 {% load static %}
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -17,7 +17,7 @@
     <nav class="navbar">
       <div class="logo_item">
         <img src="{% static 'img/fapa-logo.jpg' %}" alt=""></i>Mercado FAPA
-        <a style="color: #4d4d4d;" href="/"><i class='bx bx-home'></i></a>
+        <a style="color: #4d4d4d;" href="/produtos/ver_produto"><i class='bx bx-home'></i></a>
       </div>
 
       <div class="search_bar">
@@ -26,10 +26,10 @@
 
       <div class="navbar_content">
         <i class="bi bi-grid"></i>
-        <a href="/notificacoes"><i class='bx bx-bell'></i></a>
-        <a href="/carrinho"><i class='bx bx-cart'></i></a>
-        <a href="/orders"><i class='bx bx-basket'></i></a>
-        <a href="/"><img src="{% static 'img/user-logo3.png' %}" alt="" class="profile" /></i></a>
+        <a href="/produtos/notificacoes"><i class='bx bx-bell'></i></a>
+        <a href="/produtos/carrinho"><i class='bx bx-cart'></i></a>
+        <a href="/pedidos/pedidos"><i class='bx bx-basket'></i></a>
+        <a href="/clientes/login"><img src="{% static 'img/user-logo3.png' %}" alt="" class="profile" /></i></a>
       </div>
     </nav>
 

@@ -1,11 +1,11 @@
 {% load static %}
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Cadastro de Clientes</title>
     <link rel="stylesheet" href="{% static 'css/clientes.css'%}" />
   </head>
   <body>
@@ -13,13 +13,19 @@
       <h1>CADASTRO DE CLIENTES</h1>
       <input type="text" placeholder="NOME:" />
       <br /><br />
-      <input type="text" placeholder="EMAIL:" />
+      <input type="text" placeholder="SOBRENOME:" />
       <br /><br />
       <input type="text" placeholder="ENDEREÇO:" />
       <br /><br />
+      <input type="text" placeholder="TELEFONE:" />
+      <br /><br />
+      <input type="text" placeholder="EMAIL:" />
+      <br /><br />
       <input type="password" placeholder="SENHA:" />
       <br /><br />
-      <button>CRIAR CONTA</button>
+      <a href="/produtos/ver_produto">
+        <button>CRIAR CONTA</button>
+      </a> 
     </div>
   </body>
 </html>

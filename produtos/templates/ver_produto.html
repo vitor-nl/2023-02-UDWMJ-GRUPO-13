@@ -3,12 +3,103 @@
 <!DOCTYPE html>
 <html lang="pt-br">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Página Inicial</title>
-    <link rel="stylesheet" href="{% static 'css/produto.css' %}" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Mercado FAPA</title>
+    <link rel="stylesheet" href="{% static 'css/style.css'%}">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
   </head>
   <body>
-    <h1>Inicio</h1>
+
+    <nav class="navbar">
+      <div class="logo_item">
+        <img src="{% static 'img/fapa-logo.jpg' %}" alt=""></i>Mercado FAPA
+      </div>
+
+      <div class="search_bar">
+        <input type="text" placeholder="Buscar" />
+      </div>
+
+      <div class="navbar_content">
+        <i class="bi bi-grid"></i>
+        <a href="/produtos/notificacoes"><i class='bx bx-bell'></i></a>
+        <a href="/produtos/carrinho"><i class='bx bx-cart'></i></a>
+        <a href="/pedidos/pedidos"><i class='bx bx-basket'></i></a>
+        <a href="/clientes/login"><img src="{% static 'img/user-logo3.png' %}" alt="" class="profile" /></i></a>
+      </div>
+    </nav>
+
+    <!--shop-->
+    <section class="shop container">
+      <h2><div class="section-title">Produtos</div></h2> 
+       <div class="shop-content">
+         <!--Primeiro produto-->
+           <div class="product-box" >
+               <img src="{% static 'img/item1.png'%}" alt="" class="product-img">
+               <h2 class="product-title">Tinta Suvinil</h2>
+               <span class="price">R$ 109,90</span>
+               <i class="bx bx-shopping-bag add-cart"></i>
+           </div> 
+           <!--Segundo produto-->
+           <div class="product-box" >
+               <img src="{% static 'img/item2.png'%}" alt="" class="product-img">
+               <h2 class="product-title">Kit Siage</h2>
+               <span class="price">R$ 155,80</span>
+               <i class="bx bx-shopping-bag add-cart"></i>
+           </div> 
+           <!--Terceiro produto-->
+           <div class="product-box" >
+               <img src="{% static 'img/item3.png'%}" alt="" class="product-img">
+               <h2 class="product-title">Pão Viscondi</h2>
+               <span class="price">R$ 9,90</span>
+               <i class="bx bx-shopping-bag add-cart"></i>
+           </div> 
+           <!--Quarto produto-->
+           <div class="product-box" >
+               <img src="{% static 'img/item4.png'%}" alt="" class="product-img">
+               <h2 class="product-title">Leite Piracanjuba</h2>
+               <span class="price">R$3,70 </span>
+               <i class="bx bx-shopping-bag add-cart"></i>
+           </div> 
+           <!--Quinto produto-->
+           <div class="product-box" >
+               <img src="{% static 'img/item5.png'%}" alt="" class="product-img">
+               <h2 class="product-title">Salgadinho Cheetos</h2>
+               <span class="price">R$ 7,29 </span>
+               <i class="bx bx-shopping-bag add-cart"></i>
+           </div> 
+            <!--SEXTO produto-->
+            <div class="product-box" >
+               <img src="{% static 'img/item6.png'%}" alt="" class="product-img">
+               <h2 class="product-title">Iogurte Itambé</h2>
+               <span class="price">R$ 11,90 </span>
+               <i class="bx bx-shopping-bag add-cart"></i>
+           </div> 
+           <!--Oitavo produto-->
+           <div class="product-box" >
+               <img src="{% static 'img/item7.png'%}" alt="" class="product-img">
+               <h2 class="product-title">Abacaxi</h2>
+               <span class="price">R$ 8,99 </span>
+               <i class="bx bx-shopping-bag add-cart"></i>
+           </div> 
+           <!--Setimo produto-->
+           <div class="product-box" >
+               <img src="{% static 'img/item8.png'%}" alt="" class="product-img">
+               <h2 class="product-title">Enxaguante Bucal Listerine</h2>
+               <span class="price">R$ 24,90</span>
+               <i class="bx bx-shopping-bag add-cart"></i>
+           </div> 
+
+           <div class="cart">
+
+
+           </div>
+           
+       </div>
+
+
+
+       </div>
+   </section>
   </body>
 </html>

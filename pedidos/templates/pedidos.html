@@ -3,12 +3,33 @@
 <!DOCTYPE html>
 <html lang="pt-br">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Página Inicial</title>
-    <link rel="stylesheet" href="{% static 'css/pedido.css' %}" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Mercado FAPA</title>
+    <link rel="stylesheet" href="{% static 'css/style.css'%}">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
   </head>
   <body>
-    <h1>Inicio</h1>
-  </body>
-</html>
+
+    <nav class="navbar">
+      <div class="logo_item">
+        <img src="{% static 'img/fapa-logo.jpg' %}" alt=""></i>Mercado FAPA
+        <a style="color: #4d4d4d;" href="/produtos/ver_produto"><i class='bx bx-home'></i></a>
+      </div>
+
+      <div class="search_bar">
+        <input type="text" placeholder="Buscar" />
+      </div>
+
+      <div class="navbar_content">
+        <i class="bi bi-grid"></i>
+        <a href="/produtos/notificacoes"><i class='bx bx-bell'></i></a>
+        <a href="/produtos/carrinho"><i class='bx bx-cart'></i></a>
+        <a href="/pedidos/pedidos"><i class='bx bx-basket'></i></a>
+        <a href="/clientes/login"><img src="{% static 'img/user-logo3.png' %}" alt="" class="profile" /></i></a>
+      </div>
+    </nav>
+
+    <section class="shop container">
+        <h2><div class="section-title">Meus Pedidos</div></h2> 
+         <div class="shop-content">

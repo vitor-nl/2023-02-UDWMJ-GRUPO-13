@@ -4,3 +4,9 @@ from django.http import HttpResponse
 
 def ver_produto(request):
   return render(request, 'ver_produto.html')
+
+def carrinho(request):
+  return render(request, 'carrinho.html')
+
+def notificacoes(request):
+  return render(request, 'notificacoes.html')

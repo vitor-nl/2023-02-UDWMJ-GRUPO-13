@@ -5,7 +5,4 @@ from django.http import HttpResponse
 def pedidos(request):
   return render(request, 'pedidos.html')
 
-def login(request):
-  return render(request, 'login.html')
-
 

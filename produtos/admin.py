@@ -5,7 +5,7 @@ from .models import Categoria, Produto
 
 @admin.register(Categoria)
 class CategoriaAdmin(admin.ModelAdmin):
-    pass
+    search_fields = ('nome',)
 
 @admin.register(Produto)
 class ProdutoAdmin(admin.ModelAdmin):

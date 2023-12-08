@@ -140,6 +140,7 @@ header {
 .shop{
     margin-top:2rem;
 }
+
 .shop-content{
     display: grid;
     grid-template-columns: repeat(auto-fit,minmax(220px,auto));

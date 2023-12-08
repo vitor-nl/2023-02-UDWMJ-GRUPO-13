@@ -8,11 +8,6 @@ class Cliente(models.Model):
     address = models.CharField('Endereco', max_length=200)   
     cell_phone = models.CharField('Telefone', max_length=20)
     email = models.EmailField('E-mail',null=False, blank=False)
-    GENDER_CHOICES = (
-        ('M', 'Masculino'),
-        ('F', 'Feminino'),
-        ('O', 'Outro'),
-    )
 
     def __str__(self):
         return self.first_name
